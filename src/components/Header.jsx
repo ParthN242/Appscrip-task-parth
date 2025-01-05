@@ -26,7 +26,7 @@ const Header = () => {
           <Image src={Logo} alt={"Logo"} title={"Logo"} className="Logo" />
         </div>
         <div className="navbar_heading">
-          <p>Logo</p>
+          <h3 className="text_logo">LOGO</h3>
         </div>
         <ul className="navbar_icons">
           {NAVBAR_ICONS.map(({ icon, alt }, index) => (

@@ -18,10 +18,12 @@ import Shopping from "./Shopping.svg";
 import Search from "./Search.svg";
 import ArrowRight from "./ArrowRight.svg";
 import ArrowLeft from "./ArrowLeft.svg";
+import TextLogo from "./TextLogo.svg";
 
 export {
   ArrowLeft,
   ArrowRight,
+  TextLogo,
   Search,
   Shopping,
   Profile,

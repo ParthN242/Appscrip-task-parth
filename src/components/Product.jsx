@@ -10,16 +10,14 @@ import ProductCard from "./ProductCard";
 
 function Product() {
   const [products, setProducts] = useState([]);
-  console.log("products: ", products);
   const [isFilterMenuOpen, setIsFilterMenuOpen] = useState(false);
 
   useEffect(() => {
     const fetchProduct = async () => {
       try {
         const { data } = await axios.get("/api/products");
-        setProducts(data.products);
-        // if (data.success) setProducts(data);
-        // else console.log(data);
+        if (data.success) setProducts(data.products);
+        else console.log(data);
       } catch (error) {
         console.log("error: ", error);
       }
@@ -92,6 +90,7 @@ function Product() {
             products.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
+          {products.length === 0 && <div className="loading">Loading...</div>}
         </div>
       </div>
     </section>

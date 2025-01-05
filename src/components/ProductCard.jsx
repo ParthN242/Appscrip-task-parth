@@ -14,7 +14,8 @@ const ProductCard = ({ product }) => {
           title={product.title}
           width={800}
           height={400}
-          loading="lazy"
+          loading="eager"
+          priority
         />
       </div>
       <div className="product_detail">

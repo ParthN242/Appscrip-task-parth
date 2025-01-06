@@ -27,3 +27,13 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+## Technology Stack & Versions
+Ensure you have the following installed:
+
+Node.js: v21.7.1 or higher
+
+Next.js: v14.2.1 or higher
+
+npm: v10.5.0 or higher 
+
